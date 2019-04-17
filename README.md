@@ -1,6 +1,5 @@
-## Ai Services Workshop
-
-AWS Workshop tutorial for building applications with Amazon AI Services
+# AWS AI Services Workshop
+AWS Workshop tutorial for building applications with AWS AI Services.
 
 ## License Summary
 

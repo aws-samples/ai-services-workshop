@@ -1,0 +1,31 @@
+baseURL = "https://ai-services-workshop.go-aws.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "AWS AI Services Workshop"
+theme = "learn"
+uglyurls = "true"
+googleAnalytics = "UA-138538322-1"
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+
+[params]
+themeVariant = "mine"
+showVisitedLinks = false
+author = "Randall Hunt"
+description = "AWS AI Services Workshop"
+disableSearch = false
+disableAssetsBusting = false
+disableLanguageSwitchingButton = true
+disableShortcutsTitle = true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-twitter fa-lg'></i> @jrhunt"
+identifier = "tw"
+url = "https://twitter.com/intent/user?screen_name=jrhunt"
+weight = 1
+
+
+
+[outputs]
+home = [ "HTML", "AMP", "RSS", "JSON"]
+page = [ "HTML", "AMP"]
