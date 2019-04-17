@@ -1,0 +1,28 @@
+{
+	"name": "aws-ai-services-workshop",
+	"version": "1.0.0",
+	"homepage": "https://github.com/aws-samples/ai-services-workshop#readme",
+	"bugs": {
+		"url": "https://github.com/aws-samples/ai-services-workshop/issues"
+	},
+	"license": "ISC",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aws-samples/ai-services-workshop.git"
+	},
+	"scripts": {
+		"test": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0",
+		"start": "hugo server -w -v --enableGitInfo --bind=0.0.0.0",
+		"build": "hugo -v",
+		"deploy": "aws s3 sync public/ s3://ai-services-workshop.go-aws.com/ --delete --profile amplify-workshop",
+		"deploycontent": "aws s3 sync public/ s3://ai-services-workshop.go-aws.com/ --delete --cache-control \"max-age=3600, public\" --exclude \"*\" --include \"*.html\" --include \"*.xml\"",
+		"deployothers": "aws s3 sync public/ s3://ai-services-workshop.go-aws.com/ --delete --cache-control \"max-age=86400, public\" --exclude \"*.html\" --exclude \"*.xml\""
+	},
+	"dependencies": {
+		"discharge": "^0.7.1",
+		"hugo-cli": "^0.7.0",
+		"hugo-lunr": "0.0.4",
+		"qs": "^6.5.2"
+	}
+}
