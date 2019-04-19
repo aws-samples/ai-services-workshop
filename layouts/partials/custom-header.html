@@ -1,0 +1,13 @@
+<meta property="og:title" content="AI Services Workshop" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ai-services-workshop.go-aws.com" />
+<!-- <meta property="og:image" content="https://ai-services-workshop.go-aws.com/images/architecture.png" /> -->
+
+{{ $assetBusting := not .Site.Params.disableAssetsBusting }}
+
+<link href="{{"css/jquery-ui.min.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
+<link href="{{"css/jquery-ui.structure.min.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
+<link href="{{"css/jquery-ui.theme.min.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
+
+<script src="{{"js/jquery-ui.min.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
+<script src="{{"js/tabs.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>

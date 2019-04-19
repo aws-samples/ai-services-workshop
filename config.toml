@@ -1,4 +1,4 @@
-baseURL = "https://ai-services-workshop.go-aws.com"
+baseURL = "https://ai-services-workshop.go-aws.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "AWS AI Services Workshop"
@@ -9,22 +9,37 @@ sectionPagesMenu = "main"
 pygmentsCodeFences = true
 
 [params]
-themeVariant = "mine"
-showVisitedLinks = false
-author = "Randall Hunt"
-description = "AWS AI Services Workshop"
-disableSearch = false
-disableAssetsBusting = false
-disableLanguageSwitchingButton = true
-disableShortcutsTitle = true
+    themeVariant = "mine"
+    showVisitedLinks = false
+    author = "Randall Hunt"
+    description = "AWS AI Services Workshop"
+    disableSearch = false
+    disableAssetsBusting = false
+    disableLanguageSwitchingButton = true
+    disableShortcutsTitle = true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/aws-samples/ai-services-workshop"
+weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-twitter fa-lg'></i> @jrhunt"
-identifier = "tw"
-url = "https://twitter.com/intent/user?screen_name=jrhunt"
+identifier = "jrhunt"
+url = "https://twitter.com/jrhunt"
 weight = 1
 
+[[menu.shortcuts]]
+name = "<i class='fab fa-twitter fa-lg'></i> @TheNickWalsh"
+identifier = "thenickwalsh"
+url = "https://twitter.com/thenickwalsh"
+weight = 2
 
+[[menu.shortcuts]]
+name = "<i class='fas fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
 
 [outputs]
 home = [ "HTML", "AMP", "RSS", "JSON"]
