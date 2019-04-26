@@ -1,4 +1,4 @@
-baseURL = "https://ai-services-workshop.go-aws.com/"
+baseURL = "https://ai-services.go-aws.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "AWS AI Services Workshop"
