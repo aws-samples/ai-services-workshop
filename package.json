@@ -15,9 +15,7 @@
 		"test": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0",
 		"start": "hugo server -w -v --enableGitInfo --bind=0.0.0.0",
 		"build": "hugo -v",
-		"deploy": "aws s3 sync public/ s3://ai-services.go-aws.com/ --delete",
-		"deploycontent": "aws s3 sync public/ s3://ai-services.go-aws.com/ --delete --cache-control \"max-age=3600, public\" --exclude \"*\" --include \"*.html\" --include \"*.xml\"",
-		"deployothers": "aws s3 sync public/ s3://ai-services.go-aws.com/ --delete --cache-control \"max-age=86400, public\" --exclude \"*.html\" --exclude \"*.xml\""
+		"deploy": "aws s3 sync public/ s3://ai-services-workshop-evangelists/ --delete"
 	},
 	"dependencies": {
 		"discharge": "^0.7.1",
