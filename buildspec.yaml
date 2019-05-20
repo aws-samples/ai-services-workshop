@@ -15,5 +15,5 @@ phases:
     commands:
       - hugo -v
       - echo "S3 Upload Starting"
-      - aws s3 sync public/ s3://ai-services-workshop-evangelists/ --region us-east-1 --delete"
+      - aws s3 sync public/ s3://ai-services-workshop-evangelists/ --region us-east-1 --delete
       - echo "S3 Upload Done"
