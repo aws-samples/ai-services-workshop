@@ -45,3 +45,29 @@ END
 {{% /tab %}}
 {{% /tabs %}}
 
+
+### Create an EC2 KeyPair
+
+Creating an SSH KeyPair will allow us to connect to other EC2 instances from our cloud9 machine.
+
+Let's run this command in our terminal:
+```bash
+aws ec2 create-key-pair --key-name workshop --query 'KeyMaterial' --output text > workshop.pem
+```
+
+That will create a new private key on our machine, in workshop.pem, and a public key for EC2 to manage. For security reasons we'll change the permissions on the workshop.pem file so that only we can read it.
+
+```bash
+chmod 400 workshop.pem
+```
+
+Now we can start an ssh-agent running the background that can manage our keys and connections for us.
+
+```bash
+eval `ssh-agent -s`
+ssh-add workshop.pem
+```
+
+If it asks for a passphrase you can include one or leave it blank and just press enter.
+
+
