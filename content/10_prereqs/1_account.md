@@ -22,7 +22,7 @@ as an **IAM user** with administrator access to the AWS account:
 1. Enter the user details:
 ![Create User](/images/iam-1-create-user.png)
 
-1. Attach the AdministratorAccess IAM Policy:
+1. Attach the `AdministratorAccess` IAM Policy:
 ![Attach Policy](/images/iam-2-attach-policy.png)
 
 1. Click to create the new user:

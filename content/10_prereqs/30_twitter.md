@@ -43,7 +43,7 @@ Keep these credentials secret. Do not publish them publically.
     ![KeysAndTokensCopy](/images/twitter/5-save-keys-and-tokens.png)
 
 {{% notice tip %}}
-A lot of folks store their application credentials in something like [Amazon Secrets Manager](https://aws.amazon.com/secrets-manager/). This makes securely storing, accessing, sharing, and rotating secrets much easier than hard coding into them into environment variables.
+A lot of folks store their application credentials in something like [Amazon Secrets Manager](https://aws.amazon.com/secrets-manager). This makes securely storing, accessing, sharing, and rotating secrets much easier than hard coding into them into environment variables.
 {{% /notice %}}
 
 From here you should be ready to start any of the workshops!

@@ -21,7 +21,7 @@ These commands will take a few minutes to finish.
 
 ### Configuring a default region 
 
-A best practice is to deploy your infrastructure close to your customers, let's configure a default AWS region for this workshop : Northern Virginia (*us-east-1*) for North America or Ireland (*eu-west-1*) for Europe.
+A best practice is to deploy your infrastructure close to your customers, let's configure a default AWS region for this workshop : `Northern Virginia (*us-east-1*)` for North America or `Ireland (*eu-west-1*)` for Europe.
 
 **Create an AWS config file**, run:
 
@@ -55,13 +55,13 @@ Let's run this command in our terminal:
 aws ec2 create-key-pair --key-name workshop --query 'KeyMaterial' --output text > workshop.pem
 ```
 
-That will create a new private key on our machine, in workshop.pem, and a public key for EC2 to manage. For security reasons we'll change the permissions on the workshop.pem file so that only we can read it.
+That will create a new private key on our machine, in `workshop.pem`, and a public key for EC2 to manage. For security reasons we'll change the permissions on the `workshop.pem` file so that only we can read it.
 
 ```bash
 chmod 400 workshop.pem
 ```
 
-Now we can start an ssh-agent running the background that can manage our keys and connections for us.
+Now we can start an `ssh-agent` running the background that can manage our keys and connections for us.
 
 ```bash
 eval `ssh-agent -s`

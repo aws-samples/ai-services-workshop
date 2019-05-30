@@ -24,6 +24,6 @@ weight = 30
 
     ![Set TeamRole](/images/setNotebookIAM.png)
 
-5. Scroll down and click on **Create Notebook Instance**.  Wait the notebook instance status is **InService**. This will take a few minutes once the creation process has started.  Then click on **Open Jupyter** - whilst you're waiting you can perform step #1 of the next section to copy some files from Git/
+5. Scroll down and click on **Create Notebook Instance**.  Wait until the notebook instance status is **InService**. This will take a few minutes once the creation process has started.  Then click on **Open Jupyter** - whilst you're waiting you can perform step #1 of the next section to copy some files from GitHub.
 
     ![Open Notebook](/images/openNotebook.png)
