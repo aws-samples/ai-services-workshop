@@ -38,7 +38,7 @@ weight = 2
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-bullhorn'></i> Credits"
-url = "/credits"
+url = "/credits.html"
 weight = 30
 
 [outputs]
