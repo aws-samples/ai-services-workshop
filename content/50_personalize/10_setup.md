@@ -10,9 +10,8 @@ weight = 10
 
 2. In the dialog enter your lab "hash" key and click **Proceed**
 
-![Event login page](/images/eventLoginPage.png)
+    ![Event login page](/images/eventLoginPage.png)
 
 3. In the User Dashboard screen click on **AWS Console**.  First, copy the credentials block at the bottom of the Console Login screen, as you will need these later, and click on the **Open Console** link.
 
-![Console login](/images/eventConsoleLogin.png)
-
+    ![Console login](/images/eventConsoleLogin.png)

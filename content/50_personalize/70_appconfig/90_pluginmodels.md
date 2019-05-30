@@ -14,30 +14,30 @@ Each of these modes allows multiple models of their type to be used, but each mo
 
 1. By default the admin user within Django does not exist - you need to create one.  In your SSH session, ensure that the web server is running again, and then create a second SSH session.  In that session, create the first superuser using the following commands.  Please note down your username and password, as no-one will be able to retrieve it for you; in the Lab we suggest using **admin** and **DoNotH@ckMe** accordingly, but use any email address you like.  You can then close the second SSH session
 
-   ```bash
-   $ cd ~/personalize-video-recs/videorecs/
-   $ python manage.py createsuperuser
-   
-   Username (leave blank to use 'ec2-user'): admin
-   Email address: anyone@email.com
-   Password:
-   Password (again):
-   Superuser created successfully.
-   ```
+    ```bash
+    $ cd ~/personalize-video-recs/videorecs/
+    $ python manage.py createsuperuser
+
+    Username (leave blank to use 'ec2-user'): admin
+    Email address: anyone@email.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    ```
 
 2. Login to the Django Administration site.  This is at the same URL as the main application, but replace **/recommend** with **/admin** at the end of the URL.  This will bring up the following screen, so login now with the credentials that you just created
 
-   ![](/images/djangoAdmin.png)
+    ![django admin page](/images/djangoAdmin.png)
 
 3. This brings up the *Site Administration* screen, which show entries for Groups and Users (which we don't need), but also a section called **Recommend** where you can add **Personalize models** to the app.  Click on **+Add** link to begin to add a new model
 
-4. Back on the AWS Console, go to the **Amazon Personalize** service console, select the **summit-recs-dataset-group** and then on the left-hand menu click **Campaigns**.  This will show your **summit-lab-recs-campaign**, but if you created the two additional solutions earlier then at this point you could could first go into the **Solutions and recipes** menu item, click on each of thes two additional solutions and create the associated campaigns quickly via the console (or feel free to skip this).  Once you're back on the **Campaigns** menu you should see this
+4. Back on the AWS Console, go to the **Amazon Personalize** service console, select the **summit-recs-dataset-group** and then on the left-hand menu click **Campaigns**.  This will show your **summit-lab-recs-campaign**, but if you created the two additional solutions earlier then at this point you could could first go into the **Solutions and recipes** menu item, click on each of these two additional solutions and create the associated campaigns quickly via the console (or feel free to skip this).  Once you're back on the **Campaigns** menu you should see this
 
-   ![](/images/campaignList.png)
+    ![django campaign list](/images/campaignList.png)
 
 5. Click on the **summit-lab-recs-campaign** and you'll see the **Campaign ARN** - copy this, and head back to the admin screen.  Enter **Personal Recommendations** for the model name, enter the ARN where it asks, ensure that the **Model type** is set for recommendations and set the **Model sort order** to 1.  Click on **SAVE** to save the definition.
 
-   ![](/images/djangoAddModel.png)
+    ![django model](/images/djangoAddModel.png)
 
 6. The application will use the sort order field to decide how to order models in the on-screen drop-downs.  Only models of the right type are shown on the relevant screen, but there is no validation that you have entered the correct model type, and if you put a SIMS model on the Rankings screen then the application will throw errors.
 
@@ -45,13 +45,13 @@ Each of these modes allows multiple models of their type to be used, but each mo
 
 8. The main screen now shows the three models (or maybe just one) that we've built - it lists the precision metrics for each one, and as you add or remove models from the Django Administration page the changes will be reflected here.  Now click on the **Select Random User** button
 
-   ![](/images/appFrontScreenWithModels.png)
+    ![models page](/images/appFrontScreenWithModels.png)
 
 9. The screen will look as before, but now if you click on the **Model 1** drop-down you will see that our one Recommendation model is present - if you select it then the screen will refresh to show recommendations for this user using that model.
 
-   ![](/images/appRecWithModels.png)
+    ![app with models](/images/appRecWithModels.png)
 
-10. You can step through users to see how these look for different demographics of users.  If you had mutiple Recommendation models defined then they would also be in the two model drop-downs, and you'd be able to show two completely different recommendation models, based upon different user demographic or item metadata, allowing you to compare and contrast different approaches.
+10. You can step through users to see how these look for different demographics of users.  If you had multiple Recommendation models defined then they would also be in the two model drop-downs, and you'd be able to show two completely different recommendation models, based upon different user demographic or item metadata, allowing you to compare and contrast different approaches.
 
 11. Try out the **Personal Ranking** personalize mode - this takes a list of the most popular movies in the dataset, either as a whole or in just a single genre.  This will take that list and re-rank it into an order for this particular user, ensuring that the ones that are most likely to be interested in are shown first.
 
