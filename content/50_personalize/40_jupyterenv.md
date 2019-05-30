@@ -8,8 +8,8 @@ weight = 40
 
 We need to download two files before starting work, which are all stored within the Lab's Git repository:
 
-- the Notebook file that contains the lab - **personalize_sample_notebook.ipynb**
-- a file that is part of the MovieLens dataset - **u.item** - that has been edited slightly to remove some control characters that cause on of the _pandas_ library calls to fail, and also to include working URLs for the various movie posters that our application will show later
+- the Notebook file that contains the lab - `personalize_sample_notebook.ipynb`
+- a file that is part of the MovieLens dataset - `u.item` - that has been edited slightly to remove some control characters that cause on of the _pandas_ library calls to fail, and also to include working URLs for the various movie posters that our application will show later
 
 1. Go to the Git repository address, https://github.com/aws-samples/ai-services-workshop/tree/master/etc, and download the files called `u.item` and `personalize_sample_notebook.ipynb`.  Use any method that you are comfortable with, but there is no need to clone the entire repository - for instance, try opening the files within Git in RAW format and saving them locally (be careful to maintain the correct file extentions)
 2. In the notebook, assuming the status is now **InService**, and click on the **Upload** button, and in the dialog select the two files from the location that you stored them and upload them.
