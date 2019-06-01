@@ -32,7 +32,7 @@ This is what our final dashboard will look like:
 We'll provision and deploy this workshop with a tool called [AWS CloudFormation](https://aws.amazon.com/cloudformation/) which allows us to define our infrastructure as code. In this case, YAML.
 
 We can proceed with provisioning the workshop resources by using the "Launch Stack" button below.
-<p><a href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=SocialMediaAnalyticsBlogPost&amp;templateURL=https:%2F%2Fs3.amazonaws.com%2Fserverless-analytics%2FSocialMediaAnalytics-blog%2Fdeploy.yaml" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-47 size-full" src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2017/02/10/launchstack.png" alt="" width="107" height="20"></a></p>
+<p><a href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=SocialMediaAnalyticsBlogPost&amp;templateURL=https:%2F%2Fs3.amazonaws.com%2Fserverless-analytics%2FSocialMediaAnalytics-blog%2Fdeploy.yaml" target="_blank" rel="noopener noreferrer"><img alt="Launch Stack" src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg"></a></p>
 
 ### Launching The Stack
 
