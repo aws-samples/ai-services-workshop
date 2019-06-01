@@ -14,6 +14,9 @@ A special thanks to [@gabehollombe](https://github.com/gabehollombe), [@brentley
 ### Social Media Dashboard
 Thanks to Ben Snively and Viral Desai
 
+### AI Powered Speech Analytics for Amazon Connect
+Thanks to Yasser El-Haggan
+
 ### Personalize Workshop
 Thanks to Andrew Kane
 

@@ -8,7 +8,7 @@ weight: 1
 
 ### Welcome!
 
-In this workshop, we'll use the AWS AI Services to build applications.
+In this series of workshops, we'll build applications to learn about AWS AI Services and how they're used by millions of AWS customers to build applications that add value to their businesses.
 
 
-We'll work with a number of different AWS Services.
+To navigate the workshop use the sidebar (hamburger menu on mobile) or simply press the icon <i class="fa fa-chevron-right"></i> icon to go to the next page.

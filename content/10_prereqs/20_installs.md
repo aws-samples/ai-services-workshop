@@ -1,5 +1,5 @@
 +++
-title = "Installs & Configs"
+title = "Installs and Configs"
 chapter = false
 weight = 20
 +++
