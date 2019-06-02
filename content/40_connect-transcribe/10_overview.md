@@ -14,13 +14,13 @@ The AI Powered Speech Analytics for Amazon Connect solution provides customer in
 
 The solution combines:
 
-* Amazon Transcribe to perform real-time speech recognition and create a high-quality text transcription of each call into text
-* Amazon Comprehend to analyze the interaction, detect the sentiment of the caller, and identify key words and phrases in the conversation
-* Amazon Translate to translate the conversation into an agent’s preferred language.
+* **Amazon Transcribe** to perform real-time speech recognition and create a high-quality text transcription of each call into text
+* **Amazon Comprehend** to analyze the interaction, detect the sentiment of the caller, and identify key words and phrases in the conversation
+* **Amazon Translate** to translate the conversation into an agent’s preferred language.
 
 You can use the transcribed information with your knowledge management and customer relationship management (CRM) systems to suggest responses or recommended solutions to better respond to the caller's needs.
 
-Additionally, the solution stores the original audio files and conversation transcripts for later review or analysis
+Additionally, the solution stores the original audio files and conversation transcripts for later review or analysis.
 
 ## Architecture
 
