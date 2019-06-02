@@ -4,7 +4,7 @@ chapter: true
 weight: 1
 ---
 
-## AWS AI Services Workshop
+# AWS AI Services Workshop Series
 
 ### Welcome!
 
