@@ -6,7 +6,7 @@ weight = 30
 
 With our Amazon Connect instance configured we're ready to launch the remaining resources.
 
-<p><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=AIPoweredSpeechAnalytics&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-test-reference%2FAI-powered-speech-analytics-for-amazon-connect%2Flatest%2FAI-powered-speech-analytics-for-amazon-connect.template" target="_blank" rel="noopener noreferrer"><img alt="Launch Stack" src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg"></a></p>
+<p><a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=AIPoweredSpeechAnalytics&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2FAI-powered-speech-analytics-for-amazon-connect%2Flatest%2FAI-powered-speech-analytics-for-amazon-connect.template" target="_blank" rel="noopener noreferrer"><img alt="Launch Stack" src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg"></a></p>
 
 Click the launch stack button above and fill out the parameters with the values we saved from the previous step.
 
