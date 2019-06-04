@@ -4,6 +4,10 @@ chapter = false
 weight = 200
 +++
 
+### Using Event Engine?
+
+Thankfully, as part of how Event Engine accounts work, there will be no need to tear down resources, as the accounts will all be destroyed after the workshop. However, if you'd like an idea of what tearing down these resources looks like, follow the below instructions.
+
 ### Shutting Down the SageMaker Notebook Instance
 
 1. Open the Amazon SageMaker console and click on **Notebook instances**
@@ -22,3 +26,13 @@ The CloudFormation stack we deployed in [this step]({{<ref "20_deploytemplate.md
 * EC2 Instance
 * Application Load Balancer
 * Networking: Internet Gateway, VPC, Subnets, NAT Gateways, Route Table
+
+To delete this:
+
+1. On the **Stacks** page in the CloudFormation console, select the stack that you want to delete. The stack must be currently running.
+
+2. In the stack details pane, choose **Delete**.
+
+3. Select **Delete stack** when prompted.
+
+Note: After stack deletion has begun, you cannot abort it. The stack proceeds to the `DELETE_IN_PROGRESS` state.
