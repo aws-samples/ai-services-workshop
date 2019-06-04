@@ -20,7 +20,7 @@ weight = 20
 
 4. We are going to deploy a pre-built application via a CloudFormation template - this will be a fully-functioning recommendation system, allowing access to multiple Amazon Personalize features.  But it has one drawback - there are no models built into it!  So we will create them in this lab, and when they are ready we will re-configure this application to use them. First, we'll deploy this skeleton application, which will require us to download this CloudFormation template file. Click on the following link to download the template to a file on your local computer:
 
-    https://personalize-video-lab.s3.amazonaws.com/cloudformation_template.yml?AWSAccessKeyId=AKIAJOLHZSJ7PQR6MZZQ&Expires=1557732409&Signature=70AWpsY5pJ%2BNqizGCgFECc%2Fd2W4%3D
+    https://personalize-video-lab.s3.amazonaws.com/cloudformation_template.yml?AWSAccessKeyId=AKIAJOLHZSJ7PQR6MZZQ&Expires=1560230468&Signature=KFnairTdU0Y2hBdBcIrpftgO%2BXw%3D
 
 5. There will already be one stack deployed into your account, but we need to create another.  On the CloudFormation screen, click on the **Create Stack** button to start the deployment wizard, and in the **Choose a template** section select **Upload a template to Amazon S3**, click on the **Choose file** button, and select the template file that you just downloaded.  Then click on **Next**.
 
