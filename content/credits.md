@@ -19,8 +19,9 @@ Thank you to [Andrew Kane](https://www.linkedin.com/in/andrewjkane/) for his ori
 
 ## Contributors
 
+{{% ghcontributors "https://api.github.com/repos/aws-samples/ai-services-workshop/contributors?per_page=100" %}}
+
 Thanks to them <i class="fas fa-heart"></i> for making Open Source Software a better place!
 
 A special thanks to [@gabehollombe](https://github.com/gabehollombe), [@brentley](https://github.com/brentley/), and [@nathanpeck](https://github.com/nathanpeck) for their work on this theme.
 
-{{% ghcontributors "https://api.github.com/repos/aws-samples/ai-services-workshop/contributors?per_page=100" %}}
