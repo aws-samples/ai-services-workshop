@@ -19,3 +19,5 @@ This lab will walk you through the following:
 - Building an ML model based upon the Hierarchical Recurrent Neural Network (HRNN) algorithm 
 - Testing your model by deploying an Amazon Personalize campaign
 - Adding your campaign to the Video Recommendation application
+
+A live demo of what we'll be building today is available here: https://www.personalisevideorecs.info/recommend/
