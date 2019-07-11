@@ -6,7 +6,7 @@ weight = 50
 
 ## Create Item-to-Item Similarities Solution
 
-1. Using the same methods as before, go to the Services drop-down in the console and navigate to the **Amazon Personalize** service in another tab.  You will see the dataset group that you created earlier
+1. Using the same methods as before, go to the Services drop-down in the console and navigate to the **Amazon Personalize** service in another tab.  You will see the dataset group that you created earlier from the notebook.
 
     ![Dataset groups](/images/datasetGroups.png)
 
