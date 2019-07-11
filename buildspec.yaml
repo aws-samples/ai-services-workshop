@@ -17,5 +17,5 @@ phases:
       - echo "S3 Upload Starting"
       - aws s3 sync public/ "s3://${BUCKET_NAME}/" --region us-east-1 --delete
       - echo "S3 Upload Done"
-      - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths /*
+      - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths "/*"
       - echo "CloudFront Invalidation Started"
