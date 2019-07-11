@@ -19,7 +19,7 @@ pip install --user --upgrade awscli
 These commands will take a few minutes to finish.
 {{% /notice %}}
 
-### Configuring a default region 
+### Configuring a default region
 
 A best practice is to deploy your infrastructure close to your customers, let's configure a default AWS region for this workshop : `Northern Virginia (*us-east-1*)` for North America or `Ireland (*eu-west-1*)` for Europe.
 
@@ -45,12 +45,12 @@ END
 {{% /tab %}}
 {{% /tabs %}}
 
-
 ### Create an EC2 KeyPair
 
 Creating an SSH KeyPair will allow us to connect to other EC2 instances from our cloud9 machine.
 
 Let's run this command in our terminal:
+
 ```bash
 aws ec2 create-key-pair --key-name workshop --query 'KeyMaterial' --output text > workshop.pem
 ```
@@ -69,5 +69,3 @@ ssh-add workshop.pem
 ```
 
 If it asks for a passphrase you can include one or leave it blank and just press enter.
-
-
