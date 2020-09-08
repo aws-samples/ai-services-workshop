@@ -18,9 +18,11 @@
 		"deploy": "aws s3 sync public/ s3://ai-services-workshop-evangelists/ --delete"
 	},
 	"dependencies": {
+		"bl": "^4.0.3",
 		"discharge": "^0.7.1",
 		"hugo-cli": "^0.7.0",
 		"hugo-lunr": "0.0.4",
-		"qs": "^6.5.2"
+		"qs": "^6.5.2",
+		"upgrade": "^1.1.0"
 	}
 }
